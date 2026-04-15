@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto – La bo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">La <span>bo</span></a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html" class="active">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="section">
+    <h2>Contacto</h2>
+    <p>¿Tenés un proyecto en mente? Contanos de qué se trata y te respondemos a la brevedad.</p>
+
+    <div class="contact-wrapper">
+
+      <div class="contact-info">
+        <p><strong>Email</strong><br>contacto@labo.com.ar</p>
+        <p><strong>Teléfono</strong><br>+54 11 0000-0000</p>
+        <p><strong>Ubicación</strong><br>Buenos Aires, Argentina</p>
+        <p><strong>Horario</strong><br>Lunes a viernes, 9:00 – 18:00</p>
+      </div>
+
+      <form action="#" method="post">
+
+        <div>
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+        </div>
+
+        <div>
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="asunto" placeholder="¿En qué podemos ayudarte?" required />
+        </div>
+
+        <div>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Contanos sobre tu proyecto..." required></textarea>
+        </div>
+
+        <button type="submit">Enviar mensaje</button>
+
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p><span>La bo</span> – Consultora de Software</p>
+    <p>contacto@labo.com.ar &nbsp;|&nbsp; Buenos Aires, Argentina</p>
+  </footer>
+
+</body>
+</html>

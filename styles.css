@@ -1,0 +1,304 @@
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #F0F0ED;
+  color: #1A2A4A;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: #1A2A4A;
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: #F2C438;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+header .logo span {
+  color: #F0F0ED;
+}
+
+nav a {
+  color: #F0F0ED;
+  text-decoration: none;
+  margin-left: 28px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #F2C438;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background-color: #1A2A4A;
+  color: #F0F0ED;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  color: #F2C438;
+}
+
+.hero p {
+  margin-top: 18px;
+  font-size: 1.1rem;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.85;
+  line-height: 1.7;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 32px;
+  background-color: #F2C438;
+  color: #1A2A4A;
+  padding: 12px 32px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.hero .btn:hover {
+  background-color: #e0b320;
+}
+
+/* ===== SECTION TITLES ===== */
+.section {
+  padding: 64px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  border-left: 4px solid #F2C438;
+  padding-left: 14px;
+}
+
+.section p {
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #333;
+  max-width: 720px;
+}
+
+/* ===== MISSION CARDS ===== */
+.cards {
+  display: flex;
+  gap: 24px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  border-top: 4px solid #F2C438;
+  padding: 28px 24px;
+  flex: 1;
+  min-width: 220px;
+}
+
+.card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1A2A4A;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card p {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* ===== TEAM ===== */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 32px;
+  margin-top: 36px;
+}
+
+.team-card {
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 24px;
+  border-bottom: 3px solid #F2C438;
+}
+
+.team-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+/* Recorte específico por foto */
+.foto-tomas {
+  object-position: center 10%;
+}
+
+.foto-matias {
+  object-position: center 20%;
+}
+
+.team-card .team-info {
+  padding: 18px 16px 0;
+}
+
+.team-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1A2A4A;
+  margin-bottom: 4px;
+}
+
+.team-card .role {
+  font-size: 0.82rem;
+  color: #F2C438;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.team-card p {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ===== CONTACT FORM ===== */
+.contact-wrapper {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  margin-top: 36px;
+}
+
+.contact-info {
+  min-width: 220px;
+  flex: 1;
+}
+
+.contact-info p {
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+.contact-info strong {
+  color: #1A2A4A;
+}
+
+form {
+  flex: 2;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #1A2A4A;
+  margin-bottom: 4px;
+  display: block;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: #1A2A4A;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #F2C438;
+}
+
+form textarea {
+  height: 140px;
+  resize: vertical;
+}
+
+form button {
+  align-self: flex-start;
+  background-color: #F2C438;
+  color: #1A2A4A;
+  border: none;
+  padding: 12px 36px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s;
+}
+
+form button:hover {
+  background-color: #e0b320;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #1A2A4A;
+  color: #F0F0ED;
+  text-align: center;
+  padding: 28px 40px;
+  font-size: 0.88rem;
+}
+
+footer span {
+  color: #F2C438;
+  font-weight: 700;
+}
+
+footer p {
+  margin-top: 6px;
+  opacity: 0.6;
+  font-size: 0.82rem;
+}
