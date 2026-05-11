@@ -168,6 +168,27 @@ nav a.active {
   margin: 12px auto 0;
 }
 
+/* Foto anónima placeholder */
+.foto-anonima {
+  width: calc(100% - 20px);
+  height: 320px;
+  margin: 12px auto 0;
+  background-color: #d4dae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto-anonima::after {
+  content: '';
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #8899aa;
+  box-shadow: 0 60px 0 40px #8899aa;
+}
+
 /* Recorte específico por foto */
 .foto-tomas {
   object-position: center 10%;
